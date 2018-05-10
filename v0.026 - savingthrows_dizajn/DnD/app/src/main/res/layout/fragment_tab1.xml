@@ -18,7 +18,7 @@
             android:id="@+id/textView47"
             android:layout_width="78dp"
             android:layout_height="21dp"
-            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
             android:layout_marginTop="8dp"
             android:autoSizeMaxTextSize="20dp"
             android:autoSizeMinTextSize="5dp"
@@ -31,25 +31,31 @@
             android:textColor="@color/very_Dark_crimson"
             android:textSize="12sp"
             app:fontFamily="@font/adam"
+            app:layout_constraintBottom_toBottomOf="@+id/view4"
             app:layout_constraintEnd_toStartOf="@+id/alignment_monstera"
             app:layout_constraintTop_toBottomOf="@+id/view3" />
 
         <TextView
             android:id="@+id/alignment_monstera"
-            android:layout_width="38dp"
-            android:layout_height="19dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
             android:layout_marginEnd="16dp"
             android:layout_marginTop="8dp"
-            android:autoSizeMaxTextSize="10dp"
-            android:autoSizeMinTextSize="25dp"
-            android:autoSizeStepGranularity="2dp"
+            android:autoSizeMaxTextSize="5sp"
+            android:autoSizeMinTextSize="3sp"
+            android:autoSizeStepGranularity="1sp"
+            android:autoSizeTextType="uniform"
             android:autoText="true"
             android:fontFamily="@font/adam"
             android:gravity="center_vertical"
+            android:maxWidth="120dp"
             android:textAlignment="center"
             android:textColor="@color/very_Dark_crimson"
             android:textSize="12sp"
+            android:textStyle="italic"
             app:fontFamily="@font/adam"
+            app:layout_constraintBottom_toBottomOf="@+id/view4"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/view3" />
 
@@ -558,6 +564,7 @@
             android:id="@+id/textView6"
             android:layout_width="37dp"
             android:layout_height="18dp"
+            android:layout_marginBottom="8dp"
             android:layout_marginEnd="8dp"
             android:layout_marginStart="20dp"
             android:layout_marginTop="8dp"
@@ -568,6 +575,7 @@
             android:textColor="@color/very_Dark_crimson"
             android:textSize="14sp"
             app:fontFamily="@font/adam"
+            app:layout_constraintBottom_toBottomOf="@+id/view2"
             app:layout_constraintEnd_toStartOf="@+id/size_monster"
             app:layout_constraintStart_toEndOf="@+id/type_monster"
             app:layout_constraintTop_toBottomOf="@+id/view" />
@@ -576,6 +584,7 @@
             android:id="@+id/textView8"
             android:layout_width="40dp"
             android:layout_height="21dp"
+            android:layout_marginBottom="8dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
             android:fontFamily="@font/adam"
@@ -585,6 +594,7 @@
             android:textColor="@color/very_Dark_crimson"
             android:textSize="14sp"
             app:fontFamily="@font/adam"
+            app:layout_constraintBottom_toBottomOf="@+id/view2"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/view" />
 
@@ -592,8 +602,9 @@
             android:id="@+id/textView16"
             android:layout_width="35dp"
             android:layout_height="21dp"
+            android:layout_marginBottom="8dp"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="8dp"
             android:fontFamily="@font/adam"
             android:gravity="center_vertical"
             android:text="EXP:"
@@ -601,6 +612,7 @@
             android:textColor="@color/very_Dark_crimson"
             android:textSize="14sp"
             app:fontFamily="@font/adam"
+            app:layout_constraintBottom_toBottomOf="@+id/view3"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/view2" />
 
@@ -608,8 +620,9 @@
             android:id="@+id/textView11"
             android:layout_width="25dp"
             android:layout_height="21dp"
+            android:layout_marginBottom="8dp"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="8dp"
             android:fontFamily="@font/adam"
             android:gravity="center_vertical"
             android:text="CR:"
@@ -617,6 +630,7 @@
             android:textColor="@color/very_Dark_crimson"
             android:textSize="14sp"
             app:fontFamily="@font/adam"
+            app:layout_constraintBottom_toBottomOf="@+id/view3"
             app:layout_constraintStart_toEndOf="@+id/exp_monstera"
             app:layout_constraintTop_toBottomOf="@+id/view2" />
 
@@ -713,6 +727,7 @@
             android:id="@+id/textView12"
             android:layout_width="27dp"
             android:layout_height="24dp"
+            android:layout_marginBottom="8dp"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="8dp"
             android:fontFamily="@font/adam"
@@ -722,6 +737,7 @@
             android:textColor="@color/very_Dark_crimson"
             android:textSize="14sp"
             app:fontFamily="@font/adam"
+            app:layout_constraintBottom_toBottomOf="@+id/view4"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/view3" />
 
@@ -729,8 +745,9 @@
             android:id="@+id/textView13"
             android:layout_width="25dp"
             android:layout_height="21dp"
+            android:layout_marginBottom="8dp"
             android:layout_marginEnd="8dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="8dp"
             android:fontFamily="@font/adam"
             android:gravity="center_vertical"
             android:text="AC:"
@@ -738,6 +755,7 @@
             android:textColor="@color/very_Dark_crimson"
             android:textSize="14sp"
             app:fontFamily="@font/adam"
+            app:layout_constraintBottom_toBottomOf="@+id/view3"
             app:layout_constraintEnd_toStartOf="@+id/Ac_monstera"
             app:layout_constraintTop_toBottomOf="@+id/view2" />
 
@@ -745,14 +763,16 @@
             android:id="@+id/CR_monstera"
             android:layout_width="36dp"
             android:layout_height="21dp"
+            android:layout_marginBottom="8dp"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="8dp"
             android:fontFamily="@font/adam"
             android:gravity="center_vertical"
             android:textAlignment="textStart"
             android:textColor="@color/very_Dark_crimson"
             android:textSize="14sp"
             app:fontFamily="@font/adam"
+            app:layout_constraintBottom_toBottomOf="@+id/view3"
             app:layout_constraintStart_toEndOf="@+id/textView11"
             app:layout_constraintTop_toBottomOf="@+id/view2" />
 
@@ -760,7 +780,7 @@
             android:id="@+id/HP_monstera"
             android:layout_width="0dp"
             android:layout_height="21dp"
-            android:layout_marginStart="12dp"
+            android:layout_marginBottom="8dp"
             android:layout_marginTop="8dp"
             android:fontFamily="@font/adam"
             android:gravity="center_vertical"
@@ -768,6 +788,7 @@
             android:textColor="@color/very_Dark_crimson"
             android:textSize="14sp"
             app:fontFamily="@font/adam"
+            app:layout_constraintBottom_toBottomOf="@+id/view4"
             app:layout_constraintStart_toEndOf="@+id/textView12"
             app:layout_constraintTop_toBottomOf="@+id/view3" />
 
@@ -775,14 +796,16 @@
             android:id="@+id/Ac_monstera"
             android:layout_width="36dp"
             android:layout_height="21dp"
+            android:layout_marginBottom="8dp"
             android:layout_marginEnd="16dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="8dp"
             android:fontFamily="@font/adam"
             android:gravity="center_vertical"
             android:textAlignment="textStart"
             android:textColor="@color/very_Dark_crimson"
             android:textSize="14sp"
             app:fontFamily="@font/adam"
+            app:layout_constraintBottom_toBottomOf="@+id/view3"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/view2" />
 
@@ -882,22 +905,22 @@
             android:layout_height="21dp"
             android:layout_marginBottom="8dp"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="8dp"
             android:fontFamily="@font/adam"
             android:gravity="center_vertical"
             android:textAlignment="textStart"
             android:textColor="@color/very_Dark_crimson"
             android:textSize="14sp"
             app:fontFamily="@font/adam"
-            app:layout_constraintBottom_toTopOf="@+id/view3"
+            app:layout_constraintBottom_toBottomOf="@+id/view3"
             app:layout_constraintStart_toEndOf="@+id/textView16"
-            app:layout_constraintTop_toBottomOf="@+id/view2"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintTop_toBottomOf="@+id/view2" />
 
         <TextView
             android:id="@+id/type_monster"
             android:layout_width="119dp"
             android:layout_height="20dp"
+            android:layout_marginBottom="8dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:fontFamily="@font/adam"
@@ -906,6 +929,7 @@
             android:textColor="@color/very_Dark_crimson"
             android:textSize="14sp"
             app:fontFamily="@font/adam"
+            app:layout_constraintBottom_toBottomOf="@+id/view2"
             app:layout_constraintStart_toEndOf="@+id/textView8"
             app:layout_constraintTop_toBottomOf="@+id/view" />
 
@@ -913,6 +937,7 @@
             android:id="@+id/size_monster"
             android:layout_width="99dp"
             android:layout_height="19dp"
+            android:layout_marginBottom="8dp"
             android:layout_marginEnd="16dp"
             android:layout_marginTop="8dp"
             android:fontFamily="@font/adam"
@@ -921,6 +946,7 @@
             android:textColor="@color/very_Dark_crimson"
             android:textSize="14sp"
             app:fontFamily="@font/adam"
+            app:layout_constraintBottom_toBottomOf="@+id/view2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/view" />
 

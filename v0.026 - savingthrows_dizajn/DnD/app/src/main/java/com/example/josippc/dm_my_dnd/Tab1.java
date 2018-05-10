@@ -105,8 +105,8 @@ public class Tab1 extends Fragment {
                 cr.setText(c.getString(11));
                 final TextView hp = view.findViewById(R.id.HP_monstera);
                 if(c.getString(10) == null){
-                    hp.setText(c.getString(7) + " (" + c.getString(8) + "d" + c.getString(9) + ")");
-                }else hp.setText(c.getString(7) + " (" + c.getString(8) + "d" + c.getString(9) + " + " + c.getString(10) + ")");
+                    hp.setText(c.getString(7) + "(" + c.getString(8) + "d" + c.getString(9) + ")");
+                }else hp.setText(c.getString(7) + "(" + c.getString(8) + "d" + c.getString(9) + "+" + c.getString(10) + ")");
 
 
                 final TextView ac = view.findViewById(R.id.Ac_monstera);
@@ -220,8 +220,62 @@ public class Tab1 extends Fragment {
                 swim.setText(c.getString(25));
 
                 final TextView align = view.findViewById(R.id.alignment_monstera);
-                align.setText(c.getString(4));
-
+                switch(c.getString(4))
+                {
+                    case "U":
+                        align.setText("Unaligned");
+                        break;
+                    case "LG":
+                        align.setText("Lawful Good");
+                        break;
+                    case "LN":
+                        align.setText("Lawful Neutral");
+                        break;
+                    case "LE":
+                        align.setText("Lawful Evil");
+                        break;
+                    case "CG":
+                        align.setText("Chaotic Good");
+                        break;
+                    case "CN":
+                        align.setText("Chaotic Neutral");
+                        break;
+                    case "CE":
+                        align.setText("Chaotic Evil");
+                        break;
+                    case "Any":
+                        align.setText("Any");
+                        break;
+                    case "!G":
+                        align.setText("Any non-good");
+                        break;
+                    case "!L":
+                        align.setText("Any non-lawful");
+                        break;
+                    case "*C":
+                        align.setText("Any chaotic");
+                        break;
+                    case "*E":
+                        align.setText("Any evil");
+                        break;
+                    case "CG|NE":
+                        align.setText("Chaotic Good or Neutral Evil");
+                        break;
+                    case "N":
+                        align.setText("Neutral");
+                        break;
+                    case "NE":
+                        align.setText("Neutral Evil");
+                        break;
+                    case "NG":
+                        align.setText("Neutral Good");
+                        break;
+                    case "NG|NE":
+                        align.setText("Neutral Good or Neutral Evil");
+                        break;
+                    default:
+                        align.setText(c.getString(4));
+                }
             } while (c.moveToNext());
         }
 
