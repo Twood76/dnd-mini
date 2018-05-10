@@ -46,20 +46,15 @@ public class DmSheet extends AppCompatActivity {
             /*Toast.makeText(this, "This is my Toast1 message!",
                     Toast.LENGTH_LONG).show();*/
             // Odi u char creation view
-            //openDmSheetCreation(View.);
+            Intent intent = new Intent(this, DmSheetCreation.class);
+            startActivity(intent);
+            overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left);
         }
         else // Prikaži likove u view
         {
             Toast.makeText(this, "This is my Toast2 message!",
                     Toast.LENGTH_LONG).show();
         }
-    }
-
-
-    public void openDmSheetCreation(View view) {
-        Intent intent = new Intent(this, DmSheetCreation.class);
-        startActivity(intent);
-        overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left);
     }
 }
 

@@ -4,6 +4,167 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.josippc.dm_my_dnd.DmSheetCreation">
+    android:background="@drawable/parchment"
+    tools:context="com.example.josippc.dm_my_dnd.DmSheetCreation"
+    tools:layout_editor_absoluteY="81dp">
 
+
+    <LinearLayout
+        android:id="@+id/charmainlayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/charcreation">
+
+        <EditText
+            android:id="@+id/playername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:fontFamily="@font/adam"
+            android:hint="Player name..."
+            android:inputType="textPersonName"
+            android:textColorHint="@color/dark_crimson"
+            android:textSize="14dp" />
+
+        <EditText
+            android:id="@+id/charname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:fontFamily="@font/adam"
+            android:hint="Character name..."
+            android:inputType="textPersonName"
+            android:textColorHint="@color/dark_crimson"
+            android:textSize="14dp" />
+
+        <LinearLayout
+            android:id="@+id/charspinnerlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/level"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:entries="@array/DMSheetSpinnerClass" />
+
+            <Spinner
+                android:id="@+id/charclass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:entries="@array/DMSheetSpinnerLevel" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/bonusinit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:fontFamily="@font/adam"
+            android:hint="Bonus initiative..."
+            android:inputType="number"
+            android:textColorHint="@color/dark_crimson"
+            android:textSize="14dp" />
+
+        <EditText
+            android:id="@+id/passiveinsight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:fontFamily="@font/adam"
+            android:hint="Passive insight..."
+            android:inputType="number"
+            android:textColorHint="@color/dark_crimson"
+            android:textSize="14dp" />
+
+        <EditText
+            android:id="@+id/passiveperc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:fontFamily="@font/adam"
+            android:hint="Passive perception..."
+            android:inputType="number"
+            android:textColorHint="@color/dark_crimson"
+            android:textSize="14dp" />
+
+        <EditText
+            android:id="@+id/ac"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:fontFamily="@font/adam"
+            android:hint="AC (No shield)..."
+            android:inputType="number"
+            android:textColorHint="@color/dark_crimson"
+            android:textSize="14dp" />
+
+        <LinearLayout
+            android:id="@+id/charbuttonlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/clear"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/adam"
+                android:text="Clear"
+                android:textColor="@color/dark_crimson" />
+
+            <Button
+                android:id="@+id/save"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/adam"
+                android:onClick="addCharToDatabase"
+                android:text="Save"
+                android:textColor="@color/dark_crimson" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/adam"
+                android:text="add more"
+                android:textColor="@color/dark_crimson" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/charcreation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/adam"
+        android:text="Character creation"
+        android:textColor="@color/dark_crimson"
+        android:textColorHint="@color/very_Dark_crimson"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>
