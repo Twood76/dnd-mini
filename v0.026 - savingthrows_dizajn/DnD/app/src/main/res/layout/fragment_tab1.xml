@@ -64,13 +64,13 @@
             app:layout_constraintVertical_bias="0.0" />
 
 
-
         <TextView
             android:id="@+id/swim_text"
             android:layout_width="68dp"
             android:layout_height="11dp"
-            android:layout_marginEnd="12dp"
-            android:layout_marginTop="5dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
             android:autoSizeMaxTextSize="10dp"
             android:autoSizeMinTextSize="25dp"
             android:autoSizeStepGranularity="2dp"
@@ -81,15 +81,18 @@
             android:textAlignment="center"
             android:textColor="@color/very_Dark_crimson"
             android:textSize="8sp"
-            app:layout_constraintEnd_toStartOf="@+id/speedswim_monstera"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/climb_text" />
 
         <TextView
             android:id="@+id/speedswim_monstera"
             android:layout_width="23dp"
             android:layout_height="11dp"
-            android:layout_marginEnd="24dp"
-            android:layout_marginTop="5dp"
+            android:layout_marginEnd="268dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="268dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
             android:autoSizeMaxTextSize="10dp"
             android:autoSizeMinTextSize="25dp"
             android:autoSizeStepGranularity="2dp"
@@ -100,13 +103,16 @@
             android:textColor="@color/very_Dark_crimson"
             android:textSize="8sp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.142"
+            app:layout_constraintStart_toEndOf="@+id/swim_text"
             app:layout_constraintTop_toBottomOf="@+id/speedclimb_monstera" />
 
         <TextView
             android:id="@+id/climb_text"
             android:layout_width="68dp"
             android:layout_height="11dp"
-            android:layout_marginEnd="12dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
             android:layout_marginTop="12dp"
             android:autoSizeMaxTextSize="10dp"
             android:autoSizeMinTextSize="25dp"
@@ -118,14 +124,17 @@
             android:textAlignment="center"
             android:textColor="@color/very_Dark_crimson"
             android:textSize="8sp"
-            app:layout_constraintEnd_toStartOf="@+id/speedclimb_monstera"
-            app:layout_constraintTop_toBottomOf="@+id/view6" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/flying_text" />
 
         <TextView
             android:id="@+id/speedclimb_monstera"
             android:layout_width="23dp"
             android:layout_height="11dp"
-            android:layout_marginEnd="24dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="268dp"
+            android:layout_marginStart="12dp"
             android:layout_marginTop="12dp"
             android:autoSizeMaxTextSize="10dp"
             android:autoSizeMinTextSize="25dp"
@@ -137,14 +146,17 @@
             android:textColor="@color/very_Dark_crimson"
             android:textSize="8sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/view6" />
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/climb_text"
+            app:layout_constraintTop_toBottomOf="@+id/speedfly_monstera" />
 
         <TextView
             android:id="@+id/flying_text"
             android:layout_width="68dp"
             android:layout_height="11dp"
-            android:layout_marginEnd="12dp"
-            android:layout_marginTop="4dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
             android:autoSizeMaxTextSize="10dp"
             android:autoSizeMinTextSize="25dp"
             android:autoSizeStepGranularity="2dp"
@@ -155,14 +167,15 @@
             android:textAlignment="center"
             android:textColor="@color/very_Dark_crimson"
             android:textSize="8sp"
-            app:layout_constraintEnd_toStartOf="@+id/speedfly_monstera"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/burrow_text" />
 
         <TextView
             android:id="@+id/burrow_text"
             android:layout_width="68dp"
             android:layout_height="11dp"
-            android:layout_marginEnd="12dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
             android:layout_marginTop="12dp"
             android:autoSizeMaxTextSize="10dp"
             android:autoSizeMinTextSize="25dp"
@@ -174,14 +187,17 @@
             android:textAlignment="center"
             android:textColor="@color/very_Dark_crimson"
             android:textSize="8sp"
-            app:layout_constraintEnd_toStartOf="@+id/speedburrow_monstera"
-            app:layout_constraintTop_toBottomOf="@+id/view6" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView35" />
 
         <TextView
             android:id="@+id/speedburrow_monstera"
             android:layout_width="23dp"
             android:layout_height="11dp"
-            android:layout_marginEnd="8dp"
+            android:layout_marginEnd="288dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="288dp"
+            android:layout_marginStart="8dp"
             android:layout_marginTop="12dp"
             android:autoSizeMaxTextSize="10dp"
             android:autoSizeMinTextSize="25dp"
@@ -192,15 +208,19 @@
             android:textAlignment="center"
             android:textColor="@color/very_Dark_crimson"
             android:textSize="8sp"
-            app:layout_constraintEnd_toStartOf="@+id/climb_text"
-            app:layout_constraintTop_toBottomOf="@+id/view6" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/burrow_text"
+            app:layout_constraintTop_toBottomOf="@+id/speed_monstera" />
 
         <TextView
             android:id="@+id/speedfly_monstera"
             android:layout_width="23dp"
             android:layout_height="11dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginTop="5dp"
+            android:layout_marginEnd="276dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="276dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
             android:autoSizeMaxTextSize="10dp"
             android:autoSizeMinTextSize="25dp"
             android:autoSizeStepGranularity="2dp"
@@ -210,7 +230,9 @@
             android:textAlignment="center"
             android:textColor="@color/very_Dark_crimson"
             android:textSize="8sp"
-            app:layout_constraintEnd_toStartOf="@+id/swim_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.2"
+            app:layout_constraintStart_toEndOf="@+id/flying_text"
             app:layout_constraintTop_toBottomOf="@+id/speedburrow_monstera" />
 
         <TextView
