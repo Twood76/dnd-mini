@@ -210,15 +210,64 @@ public class Tab1 extends Fragment {
                 // SPEEDS
                 final TextView base_speed = view.findViewById(R.id.speed_monstera);
                 base_speed.setText(c.getString(21));
-                final TextView burrow = view.findViewById(R.id.speedburrow_monstera);
+               /* final TextView burrow = view.findViewById(R.id.speedburrow_monstera);
                 burrow.setText(c.getString(22));
                 final TextView climb = view.findViewById(R.id.speedclimb_monstera);
                 climb.setText(c.getString(23));
                 final TextView fly = view.findViewById(R.id.speedfly_monstera);
                 fly.setText(c.getString(24));
                 final TextView swim = view.findViewById(R.id.speedswim_monstera);
-                swim.setText(c.getString(25));
+                swim.setText(c.getString(25));*/
 
+
+                //sakriva speedove ako ih nema (osim base)
+                final TextView burrowt = view.findViewById(R.id.burrow_text);
+                final TextView burrow = view.findViewById(R.id.speedburrow_monstera);
+                if(c.getString(22) == null || c.getString(22).isEmpty())
+                {
+                    burrowt.setVisibility(View.GONE);
+                    burrow.setVisibility(View.GONE);
+                }
+                else{
+                    burrow.setText(c.getString(22));
+                }
+
+                final TextView climbt = view.findViewById(R.id.climb_text);
+                final TextView climb = view.findViewById(R.id.speedclimb_monstera);
+                if(c.getString(23) == null || c.getString(23).isEmpty())
+                {
+                    climbt.setVisibility(View.GONE);
+                    climb.setVisibility(View.GONE);
+                }
+                else{
+                    climb.setText(c.getString(23));
+                }
+
+                final TextView flyt = view.findViewById(R.id.flying_text);
+                final TextView fly = view.findViewById(R.id.speedfly_monstera);
+                if(c.getString(24) == null || c.getString(24).isEmpty())
+                {
+                    flyt.setVisibility(View.GONE);
+                    fly.setVisibility(View.GONE);
+                }
+                else{
+                    fly.setText(c.getString(24));
+                }
+
+                final TextView swimt = view.findViewById(R.id.swim_text);
+                final TextView swim = view.findViewById(R.id.speedswim_monstera);
+                if(c.getString(25) == null || c.getString(25).isEmpty())
+                {
+                    swimt.setVisibility(View.GONE);
+                   swim.setVisibility(View.GONE);
+                }
+                else{
+                    swim.setText(c.getString(25));
+                }
+
+
+
+                //Alignment pretvara u puni naziv
                 final TextView align = view.findViewById(R.id.alignment_monstera);
                 switch(c.getString(4))
                 {
