@@ -68,8 +68,7 @@ public class Tab1 extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-
-               Bundle b = getActivity().getIntent().getExtras();
+        Bundle b = getActivity().getIntent().getExtras();
 
         final String monsterId = b.getString("monsterId");
 

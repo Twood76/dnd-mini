@@ -38,7 +38,8 @@
             android:parentActivityName=".Monster_Info" />
         <activity android:name=".List_view" />
         <activity android:name=".DmSheet" />
-        <activity android:name=".SingleMonsterPregled"></activity>
+        <activity android:name=".SingleMonsterPregled" />
+        <activity android:name=".DmSheetCreation"></activity>
     </application>
 
 </manifest>

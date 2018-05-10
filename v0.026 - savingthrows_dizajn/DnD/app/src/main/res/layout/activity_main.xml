@@ -20,7 +20,7 @@
         android:backgroundTint="@android:color/transparent"
         android:drawableTop="@mipmap/itemgen_background"
         android:fontFamily="@font/adam"
-        android:text="loot gen"
+        android:text="loot generator"
         android:textColor="?attr/actionModeSplitBackground"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/encounter_generator_button"
