@@ -30,6 +30,7 @@
             android:fontFamily="@font/adam"
             android:hint="Player name..."
             android:inputType="textPersonName"
+            android:textColor="@color/dark_crimson"
             android:textColorHint="@color/dark_crimson"
             android:textSize="14dp" />
 
@@ -42,6 +43,7 @@
             android:fontFamily="@font/adam"
             android:hint="Character name..."
             android:inputType="textPersonName"
+            android:textColor="@color/dark_crimson"
             android:textColorHint="@color/dark_crimson"
             android:textSize="14dp" />
 
@@ -76,6 +78,7 @@
             android:fontFamily="@font/adam"
             android:hint="Bonus initiative..."
             android:inputType="number"
+            android:textColor="@color/dark_crimson"
             android:textColorHint="@color/dark_crimson"
             android:textSize="14dp" />
 
@@ -88,6 +91,7 @@
             android:fontFamily="@font/adam"
             android:hint="Passive insight..."
             android:inputType="number"
+            android:textColor="@color/dark_crimson"
             android:textColorHint="@color/dark_crimson"
             android:textSize="14dp" />
 
@@ -100,6 +104,7 @@
             android:fontFamily="@font/adam"
             android:hint="Passive perception..."
             android:inputType="number"
+            android:textColor="@color/dark_crimson"
             android:textColorHint="@color/dark_crimson"
             android:textSize="14dp" />
 
@@ -110,8 +115,9 @@
             android:layout_weight="1"
             android:ems="10"
             android:fontFamily="@font/adam"
-            android:hint="AC (No shield)..."
+            android:hint="Armor Class (No shield)..."
             android:inputType="number"
+            android:textColor="@color/dark_crimson"
             android:textColorHint="@color/dark_crimson"
             android:textSize="14dp" />
 
