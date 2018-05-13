@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.SQLException;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.constraint.ConstraintLayout;
@@ -108,6 +109,7 @@ public class Tab2 extends Fragment {
 
                         novitextview.setText(("hallo"));
                         novitextview.setId(i);
+                        novitextview.setTextColor(Color.parseColor("#FF290C09"));
                         novitextview.setLayoutParams(new ConstraintLayout.LayoutParams(
                                 ConstraintLayout.LayoutParams.FILL_PARENT,
                                 ConstraintLayout.LayoutParams.WRAP_CONTENT));
