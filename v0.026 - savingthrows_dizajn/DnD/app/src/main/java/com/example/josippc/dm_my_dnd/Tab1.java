@@ -105,7 +105,11 @@ public class Tab1 extends Fragment {
                 final TextView hp = view.findViewById(R.id.HP_monstera);
                 if(c.getString(10) == null){
                     hp.setText(c.getString(7) + "(" + c.getString(8) + "d" + c.getString(9) + ")");
-                }else hp.setText(c.getString(7) + "(" + c.getString(8) + "d" + c.getString(9) + "+" + c.getString(10) + ")");
+                }
+                /*else if (c.getString(10) < 1)
+                {
+
+                }*/ else hp.setText(c.getString(7) + "(" + c.getString(8) + "d" + c.getString(9) + "+" + c.getString(10) + ")");
 
 
                 final TextView ac = view.findViewById(R.id.Ac_monstera);

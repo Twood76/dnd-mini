@@ -20,7 +20,6 @@
             android:layout_height="21dp"
             android:layout_marginBottom="8dp"
             android:layout_marginEnd="8dp"
-            android:layout_marginRight="8dp"
             android:layout_marginTop="8dp"
             android:autoSizeMaxTextSize="20dp"
             android:autoSizeMinTextSize="5dp"
@@ -33,10 +32,9 @@
             android:textColor="@color/very_Dark_crimson"
             android:textSize="12sp"
             app:fontFamily="@font/adam"
-            app:layout_constraintBottom_toBottomOf="@+id/view4"
+            app:layout_constraintBottom_toTopOf="@+id/view4"
             app:layout_constraintEnd_toStartOf="@+id/alignment_monstera"
-            app:layout_constraintTop_toBottomOf="@+id/view3"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintTop_toBottomOf="@+id/view3" />
 
         <TextView
             android:id="@+id/alignment_monstera"
@@ -45,21 +43,20 @@
             android:layout_marginBottom="8dp"
             android:layout_marginEnd="20dp"
             android:layout_marginTop="8dp"
-            android:autoSizeMaxTextSize="8dp"
-            android:autoSizeMinTextSize="5dp"
-            android:autoSizeStepGranularity="1dp"
+            android:autoSizeMaxTextSize="14sp"
+            android:autoSizeMinTextSize="10sp"
+            android:autoSizeStepGranularity="1sp"
             android:autoSizeTextType="uniform"
-            android:autoText="true"
             android:fontFamily="@font/adam"
             android:gravity="center_vertical"
             android:maxWidth="80dp"
             android:textAlignment="center"
             android:textColor="@color/very_Dark_crimson"
+            android:textSize="10sp"
             app:fontFamily="@font/adam"
-            app:layout_constraintBottom_toBottomOf="@+id/view4"
+            app:layout_constraintBottom_toTopOf="@+id/view4"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/view3"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintTop_toBottomOf="@+id/view3" />
 
 
         <TextView
@@ -518,7 +515,7 @@
             android:layout_height="2dp"
             android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="28dp"
+            android:layout_marginTop="32dp"
             android:background="@color/very_Dark_crimson"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -620,7 +617,7 @@
             android:textColor="@color/very_Dark_crimson"
             android:textSize="14sp"
             app:fontFamily="@font/adam"
-            app:layout_constraintBottom_toBottomOf="@+id/view3"
+            app:layout_constraintBottom_toTopOf="@+id/view3"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/view2" />
 
@@ -638,7 +635,7 @@
             android:textColor="@color/very_Dark_crimson"
             android:textSize="14sp"
             app:fontFamily="@font/adam"
-            app:layout_constraintBottom_toBottomOf="@+id/view3"
+            app:layout_constraintBottom_toTopOf="@+id/view3"
             app:layout_constraintStart_toEndOf="@+id/exp_monstera"
             app:layout_constraintTop_toBottomOf="@+id/view2" />
 
@@ -646,7 +643,7 @@
             android:id="@+id/strS_monstera"
             android:layout_width="50dp"
             android:layout_height="21dp"
-            android:layout_marginStart="8dp"
+            android:layout_marginStart="16dp"
             android:layout_marginTop="6dp"
             android:fontFamily="@font/adam"
             android:gravity="center_vertical"
@@ -746,7 +743,7 @@
             android:textColor="@color/very_Dark_crimson"
             android:textSize="14sp"
             app:fontFamily="@font/adam"
-            app:layout_constraintBottom_toBottomOf="@+id/view4"
+            app:layout_constraintBottom_toTopOf="@+id/view4"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/view3" />
 
@@ -764,7 +761,7 @@
             android:textColor="@color/very_Dark_crimson"
             android:textSize="14sp"
             app:fontFamily="@font/adam"
-            app:layout_constraintBottom_toBottomOf="@+id/view3"
+            app:layout_constraintBottom_toTopOf="@+id/view3"
             app:layout_constraintEnd_toStartOf="@+id/Ac_monstera"
             app:layout_constraintTop_toBottomOf="@+id/view2" />
 
@@ -781,7 +778,7 @@
             android:textColor="@color/very_Dark_crimson"
             android:textSize="14sp"
             app:fontFamily="@font/adam"
-            app:layout_constraintBottom_toBottomOf="@+id/view3"
+            app:layout_constraintBottom_toTopOf="@+id/view3"
             app:layout_constraintStart_toEndOf="@+id/textView11"
             app:layout_constraintTop_toBottomOf="@+id/view2" />
 
@@ -797,7 +794,7 @@
             android:textColor="@color/very_Dark_crimson"
             android:textSize="14sp"
             app:fontFamily="@font/adam"
-            app:layout_constraintBottom_toBottomOf="@+id/view4"
+            app:layout_constraintBottom_toTopOf="@+id/view4"
             app:layout_constraintStart_toEndOf="@+id/textView12"
             app:layout_constraintTop_toBottomOf="@+id/view3" />
 
@@ -814,7 +811,7 @@
             android:textColor="@color/very_Dark_crimson"
             android:textSize="14sp"
             app:fontFamily="@font/adam"
-            app:layout_constraintBottom_toBottomOf="@+id/view3"
+            app:layout_constraintBottom_toTopOf="@+id/view3"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/view2" />
 
@@ -822,7 +819,7 @@
             android:id="@+id/str_monstera"
             android:layout_width="35dp"
             android:layout_height="21dp"
-            android:layout_marginStart="16dp"
+            android:layout_marginStart="24dp"
             android:layout_marginTop="4dp"
             android:background="@drawable/my_shape"
             android:fontFamily="@font/adam"
@@ -921,7 +918,7 @@
             android:textColor="@color/very_Dark_crimson"
             android:textSize="14sp"
             app:fontFamily="@font/adam"
-            app:layout_constraintBottom_toBottomOf="@+id/view3"
+            app:layout_constraintBottom_toTopOf="@+id/view3"
             app:layout_constraintStart_toEndOf="@+id/textView16"
             app:layout_constraintTop_toBottomOf="@+id/view2" />
 
@@ -965,7 +962,6 @@
             android:layout_height="50dp"
             android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="6dp"
             android:autoSizeMaxTextSize="32dp"
             android:autoSizeMinTextSize="15dp"
             android:autoSizeStepGranularity="3dp"
@@ -980,6 +976,7 @@
             android:textSize="18sp"
             app:fontFamily="@font/adam"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toEndOf="@+id/textView3"
             app:layout_constraintTop_toTopOf="parent" />
 

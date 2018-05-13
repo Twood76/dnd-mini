@@ -76,7 +76,7 @@ public class Monster_Info extends MonsterView {
             do {
                 item = new HashMap<String, String>();
                 item.put("line1", c.getString(1));
-                item.put("line2"," XP: " + c.getString(12) + "  - CR " + c.getString(11));
+                item.put("line2"," CR: " + c.getString(11) + "  - EXP " + c.getString(12));
                 item.put("line3", c.getString(0));
                 list.add(item);
             } while (c.moveToNext());

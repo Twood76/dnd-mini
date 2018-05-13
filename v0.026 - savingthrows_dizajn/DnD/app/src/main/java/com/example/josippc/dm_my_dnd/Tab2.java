@@ -1,12 +1,19 @@
 package com.example.josippc.dm_my_dnd;
 
+import android.app.Activity;
 import android.content.Context;
+import android.database.Cursor;
+import android.database.SQLException;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.constraint.ConstraintLayout;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
+
+import java.io.IOException;
 
 
 /**
@@ -63,8 +70,61 @@ public class Tab2 extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
+        Bundle b = getActivity().getIntent().getExtras();
+
+        final String monsterId = b.getString("monsterId");
+
+        Cursor c = null;
+        DatabaseHelper myDbHelper = new DatabaseHelper(getActivity());
+        try {
+            myDbHelper.createDataBase();
+        } catch (IOException ioe) {
+            throw new Error("Unable to create database");
+        }
+        try {
+            myDbHelper.openDataBase();
+        } catch (SQLException sqle) {
+            throw sqle;
+        }
+
+        String[] args = { monsterId };
+
+        c = myDbHelper.myDataBase.query("monsters", null ,"_id=?", args,  null, null, "Name");
+        View view =  inflater.inflate(R.layout.fragment_tab2, container, false);
+
+
+        if (c.moveToFirst()) {
+            do {
+                View consLayout = view.findViewById(R.id.constrainttab2);
+                TextView attacksList = view.findViewById(R.id.attacksList);
+                if(!c.getString(39).isEmpty())
+                {
+                    String[] attackListString = c.getString(39).split(",");
+                    int count = attackListString.length;
+                    for(int i=0; i<count; i++){
+                        attacksList.append(attackListString[i]);
+                        TextView novitextview = new TextView(view.getContext());
+
+                        novitextview.setText(("hallo"));
+                        novitextview.setId(i);
+                        novitextview.setLayoutParams(new ConstraintLayout.LayoutParams(
+                                ConstraintLayout.LayoutParams.FILL_PARENT,
+                                ConstraintLayout.LayoutParams.WRAP_CONTENT));
+                        ((ConstraintLayout) consLayout).addView(novitextview);
+                    }
+                }
+
+
+
+
+
+
+            } while (c.moveToNext());
+        }
+
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_tab2, container, false);
+        return view;
     }
 
     // TODO: Rename method, update argument and hook method into UI event

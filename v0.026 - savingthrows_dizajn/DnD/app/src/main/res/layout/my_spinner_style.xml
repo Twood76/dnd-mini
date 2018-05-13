@@ -10,6 +10,6 @@
     android:fontFamily="@font/adam"
     android:textColor="@color/dark_crimson"
     android:background="@color/transparent"
-    android:popupBackground="@color/transparent"
+    android:shadowColor="@color/transparent"
     android:textSize="14dp"
     android:padding="12dp" />
