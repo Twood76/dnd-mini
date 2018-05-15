@@ -98,22 +98,109 @@ public class Tab2 extends Fragment {
         if (c.moveToFirst()) {
             do {
                 View consLayout = view.findViewById(R.id.constrainttab2);
-                TextView attacksList = view.findViewById(R.id.attacksList);
-                if(!c.getString(39).isEmpty())
+                final TextView attacksList = view.findViewById(R.id.attacksList);
+                final TextView attacksList2 = view.findViewById(R.id.attacksList2);
+                final TextView attacksList3 = view.findViewById(R.id.attacksList3);
+                final TextView attacksList4 = view.findViewById(R.id.attacksList4);
+                final TextView attacksList5 = view.findViewById(R.id.attacksList5);
+                final TextView attacksList6 = view.findViewById(R.id.attacksList6);
+                final TextView attacksList7 = view.findViewById(R.id.attacksList7);
+                final TextView attacksDescription = view.findViewById(R.id.attackDescr);
+                final TextView attacksDescription2 = view.findViewById(R.id.attackDescr2);
+                final TextView attacksDescription3 = view.findViewById(R.id.attackDescr3);
+                final TextView attacksDescription4 = view.findViewById(R.id.attackDescr4);
+                final TextView attacksDescription5 = view.findViewById(R.id.attackDescr5);
+                final TextView attacksDescription6 = view.findViewById(R.id.attackDescr6);
+                final TextView attacksDescription7 = view.findViewById(R.id.attackDescr7);
+                if(!c.getString(54).isEmpty())
                 {
-                    String[] attackListString = c.getString(39).split(",");
+                    String[] attackListString = c.getString(54).split(",");
                     int count = attackListString.length;
                     for(int i=0; i<count; i++){
-                        attacksList.append(attackListString[i]);
+                        if(i==0) {
+                            attacksList.append(attackListString[i]);
+                            attacksDescription.setText(c.getString(55));
+                        }
+                        else if (i==1){
+                            if(c.getString(56) == null || c.getString(56).isEmpty())
+                            {
+                                attacksList2.setVisibility(View.GONE);
+                                attacksDescription2.setVisibility(View.GONE);
+                            }else{
+                                attacksList2.append(attackListString[i]);
+                                attacksDescription2.setText(c.getString(56));
+                            }
+                        }
+                        else if (i==2){
+
+                            if(c.getString(57) == null || c.getString(57).isEmpty())
+                            {
+                                attacksList3.setVisibility(View.GONE);
+                                attacksDescription3.setVisibility(View.GONE);
+                            }else{
+                                attacksList3.append(attackListString[i]);
+                                attacksDescription3.setText(c.getString(57));
+                            }
+
+                        }
+                        else if (i==3){
+
+                            if(c.getString(58) == null || c.getString(58).isEmpty())
+                            {
+                                attacksList4.setVisibility(View.GONE);
+                                attacksDescription4.setVisibility(View.GONE);
+                            }else{
+                                attacksList4.append(attackListString[i]);
+                                attacksDescription4.setText(c.getString(58));
+                            }
+                        }
+
+                        else if (i==4){
+
+                            if(c.getString(59) == null || c.getString(59).isEmpty())
+                            {
+                                attacksList5.setVisibility(View.GONE);
+                                attacksDescription5.setVisibility(View.GONE);
+                            }else{
+                                attacksList5.append(attackListString[i]);
+                                attacksDescription5.setText(c.getString(59));
+                            }
+
+                        }
+                        else if (i==5){
+
+                            if(c.getString(60) == null || c.getString(60).isEmpty())
+                            {
+                                attacksList6.setVisibility(View.GONE);
+                                attacksDescription6.setVisibility(View.GONE);
+                            }else{
+                                attacksList6.append(attackListString[i]);
+                                attacksDescription6.setText(c.getString(60));
+                            }
+
+                        }
+                        else if (i==6){
+
+                            if(c.getString(61) == null || c.getString(61).isEmpty())
+                            {
+                                attacksList7.setVisibility(View.GONE);
+                                attacksDescription7.setVisibility(View.GONE);
+                            }else{
+                                attacksList7.append(attackListString[i]);
+                                attacksDescription7.setText(c.getString(61));
+                            }
+                        }
+
+                        attacksList.append("\n\n");
                         TextView novitextview = new TextView(view.getContext());
 
-                        novitextview.setText(("hallo"));
                         novitextview.setId(i);
                         novitextview.setTextColor(Color.parseColor("#FF290C09"));
                         novitextview.setLayoutParams(new ConstraintLayout.LayoutParams(
                                 ConstraintLayout.LayoutParams.FILL_PARENT,
                                 ConstraintLayout.LayoutParams.WRAP_CONTENT));
                         ((ConstraintLayout) consLayout).addView(novitextview);
+
                     }
                 }
 
