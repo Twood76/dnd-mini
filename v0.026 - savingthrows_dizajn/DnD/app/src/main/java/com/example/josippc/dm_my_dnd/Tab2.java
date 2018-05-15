@@ -117,14 +117,6 @@ public class Tab2 extends Fragment {
                     String[] attackListString = c.getString(54).split(", ");
                     int count = attackListString.length;
 
-                    //mice space nakon splittanja stringa
-                    attackListString[1]=attackListString[1].trim();
-                    attackListString[2]=attackListString[2].trim();
-                    attackListString[3]=attackListString[3].trim();
-                    attackListString[4]=attackListString[4].trim();
-                    attackListString[5]=attackListString[5].trim();
-                    attackListString[6]=attackListString[5].trim();
-
                     //punjenje
                     for(int i=0; i<count; i++){
                         if(i==0) {
