@@ -16,7 +16,7 @@
 
         <TextView
             android:id="@+id/textView47"
-            android:layout_width="78dp"
+            android:layout_width="93dp"
             android:layout_height="21dp"
             android:layout_marginBottom="8dp"
             android:layout_marginEnd="8dp"
@@ -38,7 +38,7 @@
 
         <TextView
             android:id="@+id/alignment_monstera"
-            android:layout_width="80dp"
+            android:layout_width="85dp"
             android:layout_height="21dp"
             android:layout_marginBottom="8dp"
             android:layout_marginEnd="20dp"
@@ -63,8 +63,9 @@
             android:id="@+id/swim_text"
             android:layout_width="68dp"
             android:layout_height="16dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="2dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
             android:autoSizeMaxTextSize="10dp"
             android:autoSizeMinTextSize="25dp"
             android:autoSizeStepGranularity="2dp"
@@ -75,15 +76,16 @@
             android:textAlignment="center"
             android:textColor="@color/very_Dark_crimson"
             android:textSize="10sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/climb_text" />
+            app:layout_constraintStart_toEndOf="@+id/speedburrow_monstera"
+            app:layout_constraintTop_toBottomOf="@+id/flying_text" />
 
         <TextView
             android:id="@+id/speedswim_monstera"
             android:layout_width="24dp"
             android:layout_height="16dp"
-            android:layout_marginStart="6dp"
-            android:layout_marginTop="2dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
             android:autoSizeMaxTextSize="10dp"
             android:autoSizeMinTextSize="25dp"
             android:autoSizeStepGranularity="2dp"
@@ -95,14 +97,15 @@
             android:textColor="@color/very_Dark_crimson"
             android:textSize="10sp"
             app:layout_constraintStart_toEndOf="@+id/swim_text"
-            app:layout_constraintTop_toBottomOf="@+id/speedclimb_monstera" />
+            app:layout_constraintTop_toBottomOf="@+id/speedfly_monstera" />
 
         <TextView
             android:id="@+id/climb_text"
             android:layout_width="68dp"
             android:layout_height="16dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="2dp"
+            android:layout_marginLeft="124dp"
+            android:layout_marginStart="124dp"
+            android:layout_marginTop="8dp"
             android:autoSizeMaxTextSize="10dp"
             android:autoSizeMinTextSize="25dp"
             android:autoSizeStepGranularity="2dp"
@@ -114,71 +117,15 @@
             android:textColor="@color/very_Dark_crimson"
             android:textSize="10sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/flying_text" />
+            app:layout_constraintTop_toBottomOf="@+id/burrow_text" />
 
         <TextView
             android:id="@+id/speedclimb_monstera"
             android:layout_width="24dp"
             android:layout_height="16dp"
-            android:layout_marginStart="6dp"
-            android:layout_marginTop="2dp"
-            android:autoSizeMaxTextSize="10dp"
-            android:autoSizeMinTextSize="25dp"
-            android:autoSizeStepGranularity="2dp"
-            android:autoText="true"
-            android:background="@drawable/my_shape"
-            android:fontFamily="@font/adam"
-            android:gravity="center_vertical"
-            android:textAlignment="center"
-            android:textColor="@color/very_Dark_crimson"
-            android:textSize="10sp"
-            app:layout_constraintStart_toEndOf="@+id/climb_text"
-            app:layout_constraintTop_toBottomOf="@+id/speedfly_monstera" />
-
-        <TextView
-            android:id="@+id/flying_text"
-            android:layout_width="68dp"
-            android:layout_height="16dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="2dp"
-            android:autoSizeMaxTextSize="10dp"
-            android:autoSizeMinTextSize="25dp"
-            android:autoSizeStepGranularity="2dp"
-            android:autoText="true"
-            android:fontFamily="@font/adam"
-            android:gravity="center_vertical"
-            android:text="Flying:"
-            android:textAlignment="center"
-            android:textColor="@color/very_Dark_crimson"
-            android:textSize="10sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/burrow_text" />
-
-        <TextView
-            android:id="@+id/burrow_text"
-            android:layout_width="68dp"
-            android:layout_height="16dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="2dp"
-            android:autoSizeMaxTextSize="10dp"
-            android:autoSizeMinTextSize="25dp"
-            android:autoSizeStepGranularity="2dp"
-            android:autoText="true"
-            android:fontFamily="@font/adam"
-            android:gravity="center_vertical"
-            android:text="Burrow:"
-            android:textAlignment="center"
-            android:textColor="@color/very_Dark_crimson"
-            android:textSize="10sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView35" />
-
-        <TextView
-            android:id="@+id/speedburrow_monstera"
-            android:layout_width="24dp"
-            android:layout_height="16dp"
-            android:layout_marginStart="6dp"
-            android:layout_marginTop="2dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
             android:autoSizeMaxTextSize="10dp"
             android:autoSizeMinTextSize="25dp"
             android:autoSizeStepGranularity="2dp"
@@ -190,14 +137,75 @@
             android:textColor="@color/very_Dark_crimson"
             android:textSize="10sp"
             app:layout_constraintStart_toEndOf="@+id/burrow_text"
-            app:layout_constraintTop_toBottomOf="@+id/speed_monstera" />
+            app:layout_constraintTop_toBottomOf="@+id/view6" />
+
+        <TextView
+            android:id="@+id/flying_text"
+            android:layout_width="68dp"
+            android:layout_height="16dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:autoSizeMaxTextSize="10dp"
+            android:autoSizeMinTextSize="25dp"
+            android:autoSizeStepGranularity="2dp"
+            android:autoText="true"
+            android:fontFamily="@font/adam"
+            android:gravity="center_vertical"
+            android:text="Flying:"
+            android:textAlignment="center"
+            android:textColor="@color/very_Dark_crimson"
+            android:textSize="10sp"
+            app:layout_constraintStart_toEndOf="@+id/speedclimb_monstera"
+            app:layout_constraintTop_toBottomOf="@+id/view6" />
+
+        <TextView
+            android:id="@+id/burrow_text"
+            android:layout_width="68dp"
+            android:layout_height="16dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:autoSizeMaxTextSize="10dp"
+            android:autoSizeMinTextSize="25dp"
+            android:autoSizeStepGranularity="2dp"
+            android:autoText="true"
+            android:fontFamily="@font/adam"
+            android:gravity="center_vertical"
+            android:text="Burrow:"
+            android:textAlignment="center"
+            android:textColor="@color/very_Dark_crimson"
+            android:textSize="10sp"
+            app:layout_constraintStart_toEndOf="@+id/speed_monstera"
+            app:layout_constraintTop_toBottomOf="@+id/view6" />
+
+        <TextView
+            android:id="@+id/speedburrow_monstera"
+            android:layout_width="24dp"
+            android:layout_height="16dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:autoSizeMaxTextSize="10dp"
+            android:autoSizeMinTextSize="25dp"
+            android:autoSizeStepGranularity="2dp"
+            android:autoText="true"
+            android:background="@drawable/my_shape"
+            android:fontFamily="@font/adam"
+            android:gravity="center_vertical"
+            android:textAlignment="center"
+            android:textColor="@color/very_Dark_crimson"
+            android:textSize="10sp"
+            app:layout_constraintStart_toEndOf="@+id/climb_text"
+            app:layout_constraintTop_toBottomOf="@+id/speedclimb_monstera" />
 
         <TextView
             android:id="@+id/speedfly_monstera"
             android:layout_width="24dp"
             android:layout_height="16dp"
-            android:layout_marginStart="6dp"
-            android:layout_marginTop="2dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
             android:autoSizeMaxTextSize="10dp"
             android:autoSizeMinTextSize="25dp"
             android:autoSizeStepGranularity="2dp"
@@ -209,7 +217,7 @@
             android:textColor="@color/very_Dark_crimson"
             android:textSize="10sp"
             app:layout_constraintStart_toEndOf="@+id/flying_text"
-            app:layout_constraintTop_toBottomOf="@+id/speedburrow_monstera" />
+            app:layout_constraintTop_toBottomOf="@+id/view6" />
 
         <TextView
             android:id="@+id/textView35"
@@ -508,6 +516,32 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/view5" />
+
+        <View
+            android:id="@+id/view8"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="116dp"
+            android:background="@color/very_Dark_crimson"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/view5" />
+
+        <View
+            android:id="@+id/view10"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="88dp"
+            android:background="@color/very_Dark_crimson"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view8" />
 
         <View
             android:id="@+id/view2"
@@ -993,6 +1027,83 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/senses_string"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:text="Senses:"
+            android:textColor="@color/very_Dark_crimson"
+            android:textSize="11sp"
+            app:fontFamily="@font/adam"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/skills_string" />
+
+        <TextView
+            android:id="@+id/skills_string"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Skills:"
+            android:textColor="@color/very_Dark_crimson"
+            android:textSize="11sp"
+            app:fontFamily="@font/adam"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view8" />
+
+        <TextView
+            android:id="@+id/skills_monstera"
+            android:layout_width="261dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/very_Dark_crimson"
+            android:textSize="11sp"
+            app:fontFamily="@font/adam"
+            app:layout_constraintTop_toBottomOf="@+id/view8"
+            tools:layout_editor_absoluteX="87dp" />
+
+        <TextView
+            android:id="@+id/senses_monstera"
+            android:layout_width="278dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:textColor="@color/very_Dark_crimson"
+            android:textSize="11sp"
+            app:fontFamily="@font/adam"
+            app:layout_constraintTop_toBottomOf="@+id/skills_monstera"
+            tools:layout_editor_absoluteX="86dp" />
+
+        <TextView
+            android:id="@+id/lang_string"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:text="Languages:"
+            android:textColor="@color/very_Dark_crimson"
+            android:textSize="11sp"
+            app:fontFamily="@font/adam"
+            app:layout_constraintBottom_toTopOf="@+id/view10"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/lang_monstera"
+            android:layout_width="228dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/very_Dark_crimson"
+            android:textSize="11sp"
+            app:fontFamily="@font/adam"
+            app:layout_constraintBottom_toTopOf="@+id/view10"
+            app:layout_constraintStart_toEndOf="@+id/lang_string" />
 
     </android.support.constraint.ConstraintLayout>
 </ScrollView>

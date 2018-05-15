@@ -328,6 +328,40 @@ public class Tab1 extends Fragment {
                     default:
                         align.setText(c.getString(4));
                 }
+
+                final TextView skills_string = view.findViewById(R.id.skills_string);
+                final TextView skills_monstera = view.findViewById(R.id.skills_monstera);
+                if(c.getString(36) == null || c.getString(36).isEmpty())
+                {
+                    skills_string.setVisibility(View.GONE);
+                    skills_monstera.setVisibility(View.GONE);
+                }
+                else{
+                    skills_monstera.setText(c.getString(36));
+                }
+
+                final TextView senses_string = view.findViewById(R.id.senses_string);
+                final TextView senses_monstera = view.findViewById(R.id.senses_monstera);
+                if(c.getString(37) == null || c.getString(37).isEmpty())
+                {
+                    senses_string.setVisibility(View.GONE);
+                    senses_monstera.setVisibility(View.GONE);
+                }
+                else{
+                    senses_monstera.setText(c.getString(37));
+                }
+
+                final TextView lang_string = view.findViewById(R.id.lang_string);
+                final TextView lang_monstera = view.findViewById(R.id.lang_monstera);
+                if(c.getString(38) == null || c.getString(38).isEmpty())
+                {
+                    lang_string.setVisibility(View.GONE);
+                    lang_monstera.setVisibility(View.GONE);
+                }
+                else{
+                    lang_monstera.setText(c.getString(38));
+                }
+
             } while (c.moveToNext());
         }
 
