@@ -41,7 +41,15 @@ public class SingleMonsterPregled extends AppCompatActivity implements Tab1.OnFr
         tabLayout.addTab(tabLayout.newTab().setText("Overview"));
         tabLayout.addTab(tabLayout.newTab().setText("Attacks"));
         tabLayout.addTab(tabLayout.newTab().setText("Traits"));
-        //tabLayout.addTab(tabLayout.newTab().setText("Legendary"));
+        if (c.moveToFirst()) {
+            do {
+                if(c.getString(62).length()>0) {
+                    tabLayout.addTab(tabLayout.newTab().setText("Legendary"));
+                }
+            } while (c.moveToNext());
+        }
+
+
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
 
         final ViewPager viewPager=(ViewPager)findViewById(R.id.pager);
