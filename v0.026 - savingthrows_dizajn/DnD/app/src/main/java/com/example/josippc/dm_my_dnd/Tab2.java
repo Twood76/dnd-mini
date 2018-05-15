@@ -191,7 +191,6 @@ public class Tab2 extends Fragment {
                             }
                         }
 
-                        attacksList.append("\n\n");
                         TextView novitextview = new TextView(view.getContext());
 
                         novitextview.setId(i);
