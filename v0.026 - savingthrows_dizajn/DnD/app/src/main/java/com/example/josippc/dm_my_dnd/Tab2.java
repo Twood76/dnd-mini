@@ -118,7 +118,7 @@ public class Tab2 extends Fragment {
                     int count = attackListString.length;
                     for(int i=0; i<count; i++){
                         if(i==0) {
-                            attacksList.append(attackListString[i]);
+                            attacksList.append("1. " + attackListString[i]);
                             attacksDescription.setText(c.getString(55));
                         }
                         else if (i==1){
@@ -127,7 +127,7 @@ public class Tab2 extends Fragment {
                                 attacksList2.setVisibility(View.GONE);
                                 attacksDescription2.setVisibility(View.GONE);
                             }else{
-                                attacksList2.append(attackListString[i]);
+                                attacksList2.append("2." + attackListString[i]);
                                 attacksDescription2.setText(c.getString(56));
                             }
                         }
@@ -138,7 +138,7 @@ public class Tab2 extends Fragment {
                                 attacksList3.setVisibility(View.GONE);
                                 attacksDescription3.setVisibility(View.GONE);
                             }else{
-                                attacksList3.append(attackListString[i]);
+                                attacksList3.append("3." + attackListString[i]);
                                 attacksDescription3.setText(c.getString(57));
                             }
 
@@ -150,7 +150,7 @@ public class Tab2 extends Fragment {
                                 attacksList4.setVisibility(View.GONE);
                                 attacksDescription4.setVisibility(View.GONE);
                             }else{
-                                attacksList4.append(attackListString[i]);
+                                attacksList4.append("4." + attackListString[i]);
                                 attacksDescription4.setText(c.getString(58));
                             }
                         }
@@ -162,7 +162,7 @@ public class Tab2 extends Fragment {
                                 attacksList5.setVisibility(View.GONE);
                                 attacksDescription5.setVisibility(View.GONE);
                             }else{
-                                attacksList5.append(attackListString[i]);
+                                attacksList5.append("5." + attackListString[i]);
                                 attacksDescription5.setText(c.getString(59));
                             }
 
@@ -174,7 +174,7 @@ public class Tab2 extends Fragment {
                                 attacksList6.setVisibility(View.GONE);
                                 attacksDescription6.setVisibility(View.GONE);
                             }else{
-                                attacksList6.append(attackListString[i]);
+                                attacksList6.append("6." + attackListString[i]);
                                 attacksDescription6.setText(c.getString(60));
                             }
 
@@ -186,7 +186,7 @@ public class Tab2 extends Fragment {
                                 attacksList7.setVisibility(View.GONE);
                                 attacksDescription7.setVisibility(View.GONE);
                             }else{
-                                attacksList7.append(attackListString[i]);
+                                attacksList7.append("7." + attackListString[i]);
                                 attacksDescription7.setText(c.getString(61));
                             }
                         }
