@@ -114,8 +114,18 @@ public class Tab2 extends Fragment {
                 final TextView attacksDescription7 = view.findViewById(R.id.attackDescr7);
                 if(!c.getString(54).isEmpty())
                 {
-                    String[] attackListString = c.getString(54).split(",");
+                    String[] attackListString = c.getString(54).split(", ");
                     int count = attackListString.length;
+
+                    //mice space nakon splittanja stringa
+                    attackListString[1]=attackListString[1].trim();
+                    attackListString[2]=attackListString[2].trim();
+                    attackListString[3]=attackListString[3].trim();
+                    attackListString[4]=attackListString[4].trim();
+                    attackListString[5]=attackListString[5].trim();
+                    attackListString[6]=attackListString[5].trim();
+
+                    //punjenje
                     for(int i=0; i<count; i++){
                         if(i==0) {
                             attacksList.append(attackListString[i]);
@@ -124,6 +134,7 @@ public class Tab2 extends Fragment {
                         else if (i==1){
                             if(c.getString(56) == null || c.getString(56).isEmpty())
                             {
+
                                 attacksList2.setVisibility(View.GONE);
                                 attacksDescription2.setVisibility(View.GONE);
                             }else{
@@ -202,11 +213,6 @@ public class Tab2 extends Fragment {
 
                     }
                 }
-
-
-
-
-
 
             } while (c.moveToNext());
         }
