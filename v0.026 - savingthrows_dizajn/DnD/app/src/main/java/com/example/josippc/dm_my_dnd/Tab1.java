@@ -362,6 +362,16 @@ public class Tab1 extends Fragment {
                     lang_monstera.setText(c.getString(38));
                 }
 
+                if(skills_monstera.getVisibility()==View.GONE &&
+                        senses_monstera.getVisibility()==View.GONE &&
+                        lang_monstera.getVisibility()==View.GONE)
+                {
+                    final View SkillsView = (View) view.findViewById(R.id.view10);
+                    ConstraintLayout.LayoutParams lp1 = (ConstraintLayout.LayoutParams) SkillsView.getLayoutParams();
+                    lp1.setMargins(8,0,8,0);
+                    SkillsView.setVisibility(View.GONE);
+                }
+
             } while (c.moveToNext());
         }
 
