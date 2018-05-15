@@ -1,6 +1,5 @@
 package com.example.josippc.dm_my_dnd;
 
-import android.app.Activity;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.SQLException;
@@ -98,19 +97,19 @@ public class Tab2 extends Fragment {
         if (c.moveToFirst()) {
             do {
                 View consLayout = view.findViewById(R.id.constrainttab2);
-                final TextView attacksList = view.findViewById(R.id.attacksList);
-                final TextView attacksList2 = view.findViewById(R.id.attacksList2);
-                final TextView attacksList3 = view.findViewById(R.id.attacksList3);
-                final TextView attacksList4 = view.findViewById(R.id.attacksList4);
-                final TextView attacksList5 = view.findViewById(R.id.attacksList5);
-                final TextView attacksList6 = view.findViewById(R.id.attacksList6);
-                final TextView attacksList7 = view.findViewById(R.id.attacksList7);
-                final TextView attacksDescription = view.findViewById(R.id.attackDescr);
-                final TextView attacksDescription2 = view.findViewById(R.id.attackDescr2);
-                final TextView attacksDescription3 = view.findViewById(R.id.attackDescr3);
-                final TextView attacksDescription4 = view.findViewById(R.id.attackDescr4);
-                final TextView attacksDescription5 = view.findViewById(R.id.attackDescr5);
-                final TextView attacksDescription6 = view.findViewById(R.id.attackDescr6);
+                final TextView attacksList = view.findViewById(R.id.traitsList);
+                final TextView attacksList2 = view.findViewById(R.id.traitsList2);
+                final TextView attacksList3 = view.findViewById(R.id.traitsList3);
+                final TextView attacksList4 = view.findViewById(R.id.traitsList4);
+                final TextView attacksList5 = view.findViewById(R.id.traitsList5);
+                final TextView attacksList6 = view.findViewById(R.id.traitsList6);
+                final TextView attacksList7 = view.findViewById(R.id.traitsList7);
+                final TextView attacksDescription = view.findViewById(R.id.traitsDescr);
+                final TextView attacksDescription2 = view.findViewById(R.id.traitsDescr2);
+                final TextView attacksDescription3 = view.findViewById(R.id.traitsDescr3);
+                final TextView attacksDescription4 = view.findViewById(R.id.traitsDescr4);
+                final TextView attacksDescription5 = view.findViewById(R.id.traitsDescr5);
+                final TextView attacksDescription6 = view.findViewById(R.id.traitsDescr6);
                 final TextView attacksDescription7 = view.findViewById(R.id.attackDescr7);
                 if(!c.getString(54).isEmpty())
                 {

@@ -202,12 +202,12 @@ public class Tab1 extends Fragment {
                         intSTS.getVisibility()==View.GONE &&
                         wisSTS.getVisibility()==View.GONE &&
                         chaSTS.getVisibility()==View.GONE)
-                {
-                    final View SavingThrowView = (View) view.findViewById(R.id.view6);
-                    ConstraintLayout.LayoutParams lp = (ConstraintLayout.LayoutParams) SavingThrowView.getLayoutParams();
-                    lp.setMargins(8,0,8,0);
-                    SavingThrowView.setVisibility(View.GONE);
-                }
+                    {
+                        final View SavingThrowView = (View) view.findViewById(R.id.view6);
+                        ConstraintLayout.LayoutParams lp = (ConstraintLayout.LayoutParams) SavingThrowView.getLayoutParams();
+                        lp.setMargins(8,0,8,0);
+                        SavingThrowView.setVisibility(View.GONE);
+                    }
 
 
                 // SPEEDS
