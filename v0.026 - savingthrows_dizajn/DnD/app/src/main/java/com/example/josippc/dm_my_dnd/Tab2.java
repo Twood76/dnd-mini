@@ -114,8 +114,10 @@ public class Tab2 extends Fragment {
                 final TextView attacksDescription7 = view.findViewById(R.id.attackDescr7);
                 if(!c.getString(54).isEmpty())
                 {
-                    String[] attackListString = c.getString(54).split(",");
+                    String[] attackListString = c.getString(54).split(", ");
                     int count = attackListString.length;
+
+                    //punjenje
                     for(int i=0; i<count; i++){
                         if(i==0) {
                             attacksList.append("1. " + attackListString[i]);
@@ -124,6 +126,7 @@ public class Tab2 extends Fragment {
                         else if (i==1){
                             if(c.getString(56) == null || c.getString(56).isEmpty())
                             {
+
                                 attacksList2.setVisibility(View.GONE);
                                 attacksDescription2.setVisibility(View.GONE);
                             }else{
@@ -202,11 +205,6 @@ public class Tab2 extends Fragment {
 
                     }
                 }
-
-
-
-
-
 
             } while (c.moveToNext());
         }
