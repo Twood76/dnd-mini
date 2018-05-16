@@ -372,6 +372,50 @@ public class Tab1 extends Fragment {
                     SkillsView.setVisibility(View.GONE);
                 }
 
+                final TextView res_string = view.findViewById(R.id.res_string);
+                final TextView res_m = view.findViewById(R.id.res_m);
+                if(c.getString(33) == null || c.getString(33).isEmpty())
+                {
+                    res_string.setVisibility(View.GONE);
+                    res_m.setVisibility(View.GONE);
+                }
+                else{
+                    res_m.setText(c.getString(33));
+                }
+
+                final TextView dimm_string = view.findViewById(R.id.dimm_string);
+                final TextView dimm_m = view.findViewById(R.id.dimm_m);
+                if(c.getString(34) == null || c.getString(34).isEmpty())
+                {
+                    dimm_string.setVisibility(View.GONE);
+                    dimm_m.setVisibility(View.GONE);
+                }
+                else{
+                    dimm_m.setText(c.getString(34));
+                }
+
+                final TextView cimm_string = view.findViewById(R.id.cimm_string);
+                final TextView cimm_m = view.findViewById(R.id.cimm_m);
+                if(c.getString(35) == null || c.getString(35).isEmpty())
+                {
+                    cimm_string.setVisibility(View.GONE);
+                    cimm_m.setVisibility(View.GONE);
+                }
+                else{
+                    cimm_m.setText(c.getString(35));
+                }
+
+                final TextView vul_string = view.findViewById(R.id.vul_string);
+                final TextView vul_m = view.findViewById(R.id.vul_m);
+                if(c.getString(32) == null || c.getString(32).isEmpty())
+                {
+                    vul_string.setVisibility(View.GONE);
+                    vul_m.setVisibility(View.GONE);
+                }
+                else{
+                    vul_m.setText(c.getString(32));
+                }
+
             } while (c.moveToNext());
         }
 

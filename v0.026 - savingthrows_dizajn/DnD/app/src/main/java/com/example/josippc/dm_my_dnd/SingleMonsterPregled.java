@@ -39,7 +39,7 @@ public class SingleMonsterPregled extends AppCompatActivity implements Tab1.OnFr
         // Još nemamo column za LEGENDARY pa je tu samo zakomentirano
         TabLayout tabLayout=(TabLayout)findViewById(R.id.tablayout);
         tabLayout.addTab(tabLayout.newTab().setText("Overview"));
-        tabLayout.addTab(tabLayout.newTab().setText("Attacks"));
+        tabLayout.addTab(tabLayout.newTab().setText("Actions"));
         tabLayout.addTab(tabLayout.newTab().setText("Traits"));
         if (c.moveToFirst()) {
             do {
