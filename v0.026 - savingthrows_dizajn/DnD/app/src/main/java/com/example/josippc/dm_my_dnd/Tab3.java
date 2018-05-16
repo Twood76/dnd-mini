@@ -222,14 +222,6 @@ public class Tab3 extends Fragment {
                             }
                         }
 
-                        //TextView novitextview = new TextView(view.getContext());
-                        //novitextview.setId(i);
-                        //novitextview.setTextColor(Color.parseColor("#FF290C09"));
-                        //novitextview.setLayoutParams(new ConstraintLayout.LayoutParams(
-                        //        ConstraintLayout.LayoutParams.FILL_PARENT,
-                        //        ConstraintLayout.LayoutParams.WRAP_CONTENT));
-                        //((ConstraintLayout) consLayout).addView(novitextview);
-
                     }
                 }
 

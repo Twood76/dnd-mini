@@ -1,12 +1,17 @@
 package com.example.josippc.dm_my_dnd;
 
 import android.content.Context;
+import android.database.Cursor;
+import android.database.SQLException;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
+
+import java.io.IOException;
 
 
 /**
@@ -63,9 +68,130 @@ public class Tab4 extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
+        Bundle b = getActivity().getIntent().getExtras();
+
+        final String monsterId = b.getString("monsterId");
+
+        Cursor c = null;
+        DatabaseHelper myDbHelper = new DatabaseHelper(getActivity());
+        try {
+            myDbHelper.createDataBase();
+        } catch (IOException ioe) {
+            throw new Error("Unable to create database");
+        }
+        try {
+            myDbHelper.openDataBase();
+        } catch (SQLException sqle) {
+            throw sqle;
+        }
+
+        String[] args = { monsterId };
+
+        c = myDbHelper.myDataBase.query("monsters", null ,"_id=?", args,  null, null, "Name");
+        View view =  inflater.inflate(R.layout.fragment_tab4, container, false);
+
+
+        if (c.moveToFirst()) {
+            do {
+                View consLayout = view.findViewById(R.id.constrainttab4);
+                final TextView leg_info = view.findViewById(R.id.leg_info);
+                final TextView leg_list = view.findViewById(R.id.leg_list);
+                final TextView leg_list2 = view.findViewById(R.id.leg_list2);
+                final TextView leg_list3 = view.findViewById(R.id.leg_list3);
+                final TextView leg_list4 = view.findViewById(R.id.leg_list4);
+                final TextView leg_list5 = view.findViewById(R.id.leg_list5);
+                final TextView leg_list6 = view.findViewById(R.id.leg_list6);
+                final TextView leg_desc = view.findViewById(R.id.leg_descr);
+                final TextView leg_desc2 = view.findViewById(R.id.leg_descr2);
+                final TextView leg_desc3 = view.findViewById(R.id.leg_descr3);
+                final TextView leg_desc4 = view.findViewById(R.id.leg_descr4);
+                final TextView leg_desc5 = view.findViewById(R.id.leg_descr5);
+                final TextView leg_desc6 = view.findViewById(R.id.leg_descr6);
+
+                if(!c.getString(62).isEmpty())
+                {
+                    String[] leg_listString = c.getString(63).split(", ");
+                    int count = leg_listString.length;
+
+                    //punjenje
+                    for(int i=0; i<count; i++){
+                        if(c.getString(62) == null || c.getString(62).isEmpty())
+                        {
+                            break;
+                        }
+                        else {
+                            if (i == 0) {
+                                leg_list.append("1." + leg_listString[i]);
+                                leg_desc.setText(c.getString(64));
+                            } else if (i == 1) {
+                                if (c.getString(65) == null || c.getString(65).isEmpty()) {
+
+                                    leg_list2.setVisibility(View.GONE);
+                                    leg_desc2.setVisibility(View.GONE);
+                                } else {
+                                    leg_list2.append("2." + leg_listString[i]);
+                                    leg_desc2.setText(c.getString(65));
+                                }
+                            } else if (i == 2) {
+
+                                if (c.getString(66) == null || c.getString(66).isEmpty()) {
+                                    leg_list3.setVisibility(View.GONE);
+                                    leg_desc3.setVisibility(View.GONE);
+                                } else {
+                                    leg_list3.append("3." + leg_listString[i]);
+                                    leg_desc3.setText(c.getString(66));
+                                }
+
+                            } else if (i == 3) {
+
+                                if (c.getString(67) == null || c.getString(67).isEmpty()) {
+                                    leg_list4.setVisibility(View.GONE);
+                                    leg_desc4.setVisibility(View.GONE);
+                                } else {
+                                    leg_list4.append("4." + leg_listString[i]);
+                                    leg_desc4.setText(c.getString(67));
+                                }
+                            } else if (i == 4) {
+
+                                if (c.getString(68) == null || c.getString(68).isEmpty()) {
+                                    leg_list5.setVisibility(View.GONE);
+                                    leg_desc5.setVisibility(View.GONE);
+                                } else {
+                                    leg_list5.append("5." + leg_listString[i]);
+                                    leg_desc5.setText(c.getString(68));
+                                }
+
+                            } else if (i == 5) {
+
+                                if (c.getString(69) == null || c.getString(69).isEmpty()) {
+                                    leg_list6.setVisibility(View.GONE);
+                                    leg_desc6.setVisibility(View.GONE);
+                                } else {
+                                    leg_list6.append("6." + leg_listString[i]);
+                                    leg_desc6.setText(c.getString(66));
+                                }
+
+                            }
+                        }
+
+                    }
+
+                    if (c.getString(62) == null || c.getString(62).isEmpty()) {
+                        leg_info.setVisibility(View.GONE);
+                    } else {
+                        leg_info.setText(c.getString(62));
+                    }
+
+                }
+
+            } while (c.moveToNext());
+        }
+
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_tab4, container, false);
-    }
+        return view;
+    }  
+        
 
     // TODO: Rename method, update argument and hook method into UI event
     public void onButtonPressed(Uri uri) {
