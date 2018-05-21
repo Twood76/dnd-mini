@@ -103,13 +103,25 @@ public class Tab1 extends Fragment {
                 final TextView cr = view.findViewById(R.id.CR_monstera);
                 cr.setText(c.getString(11));
                 final TextView hp = view.findViewById(R.id.HP_monstera);
-                if(c.getString(10) == null){
+
+
+                // Prikaz Hit Pointsa skupa sa kockicama i adjustmentom. Ako monster nema adjustment onda ne piše ništa itd.
+                String stradjustment = c.getString(10);
+                int adjustment = 0;
+                if(c.getString(10) != null && !c.getString(10).isEmpty()) // Pretvori Adjustment u integer ako uopce postoji u bazi
+                {
+                    adjustment = Integer.parseInt(stradjustment);
+                }
+                if(c.getString(10) == null || c.getString(10).isEmpty()){ // Ako ne postoji Adjustment
                     hp.setText(c.getString(7) + "(" + c.getString(8) + "d" + c.getString(9) + ")");
                 }
-                /*else if (c.getString(10) < 1)
+                else if (adjustment < 0) // Ako je negativan adjustment
                 {
-
-                }*/ else hp.setText(c.getString(7) + "(" + c.getString(8) + "d" + c.getString(9) + "+" + c.getString(10) + ")");
+                    hp.setText(c.getString(7) + "(" + c.getString(8) + "d" + c.getString(9) + c.getString(10) + ")");
+                } else      // Ako je regulara pozitivan adjustment (za 99% monstera)
+                {
+                    hp.setText(c.getString(7) + "(" + c.getString(8) + "d" + c.getString(9) + "+" + c.getString(10) + ")");
+                }
 
 
                 final TextView ac = view.findViewById(R.id.Ac_monstera);
