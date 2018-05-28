@@ -36,6 +36,12 @@ public class MainActivity extends AppCompatActivity {
         overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left);
     }
 
+    public void openPlayers(View view) {
+        Intent intent = new Intent(this, Players.class);
+        startActivity(intent);
+        overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left);
+    }
+
     @Override
     public void finish(){
         super.finish();

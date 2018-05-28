@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/parchment"
+    tools:context="com.example.josippc.dm_my_dnd.MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+
+    <Button
+        android:id="@+id/classes_button"
+        android:layout_width="119dp"
+        android:layout_height="126dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/transparent"
+        android:backgroundTint="@android:color/transparent"
+        android:drawableTop="@mipmap/itemgen_background"
+        android:fontFamily="@font/adam"
+        android:text="Classes"
+        android:textColor="?attr/actionModeSplitBackground"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/backgrounds_button"
+        android:layout_width="119dp"
+        android:layout_height="137dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:backgroundTint="@android:color/transparent"
+        android:drawableTop="@mipmap/encounter_background"
+        android:fontFamily="@font/adam"
+        android:text="Backgrounds"
+        android:textColor="?attr/actionModeSplitBackground"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/feats_button" />
+
+    <Button
+        android:id="@+id/feats_button"
+        android:layout_width="119dp"
+        android:layout_height="130dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:backgroundTint="@android:color/transparent"
+        android:drawableTop="@mipmap/feats_foreground"
+        android:elegantTextHeight="false"
+        android:fontFamily="@font/adam"
+        android:freezesText="false"
+        android:onClick="openMonstersView"
+        android:shadowColor="#455FA8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="0"
+        android:text="Feats"
+        android:textColor="?attr/actionModeSplitBackground"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/races_button"
+        android:layout_width="119dp"
+        android:layout_height="129dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:layout_marginTop="12dp"
+        android:background="@android:color/transparent"
+        android:backgroundTint="@android:color/transparent"
+        android:drawableTop="@mipmap/items_background"
+        android:elegantTextHeight="false"
+        android:fontFamily="@font/adam"
+        android:freezesText="false"
+        android:shadowColor="#455FA8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="0"
+        android:text="Races"
+        android:textColor="?attr/actionModeSplitBackground"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/classes_button" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Version 0.017"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" /><![CDATA[
+
+
+
+    " />
+
+    " />
+
+
+
+]]>
+</android.support.constraint.ConstraintLayout>
