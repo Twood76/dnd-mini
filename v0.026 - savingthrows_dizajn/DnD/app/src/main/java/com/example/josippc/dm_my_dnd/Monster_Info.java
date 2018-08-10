@@ -63,10 +63,10 @@ public class Monster_Info extends MonsterView {
         String Allmonsters = getResources().getString(R.string.AllMonsters);
         if (monsterType.equals(Allmonsters))
         {
-            c = myDbHelper.myDataBase.query("monsters9", null ,null,null,  null, null, "CR");
+            c = myDbHelper.myDataBase.query("monsters", null ,null,null,  null, null, "CR");
         }else
         {
-            c = myDbHelper.myDataBase.query("monsters9", null ,"Type=?", args,  null, null, "CR");
+            c = myDbHelper.myDataBase.query("monsters", null ,"Type=?", args,  null, null, "CR");
         }
 
 

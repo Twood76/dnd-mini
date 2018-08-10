@@ -1143,7 +1143,7 @@
             android:textSize="12sp"
             app:fontFamily="@font/adam"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/res_m" />
+            app:layout_constraintTop_toBottomOf="@+id/res_string" />
 
         <TextView
             android:id="@+id/res_m"
@@ -1175,30 +1175,26 @@
             android:id="@+id/vul_string"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginStart="16dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginStart="24dp"
             android:layout_marginTop="16dp"
             android:text="Vulnerability:"
             android:textColor="@color/very_Dark_crimson"
             android:textSize="12sp"
             app:fontFamily="@font/adam"
-            app:layout_constraintBottom_toTopOf="@+id/view8"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/cimm_m" />
+            app:layout_constraintTop_toBottomOf="@+id/cimm_string" />
 
         <TextView
             android:id="@+id/vul_m"
             android:layout_width="193dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
             android:layout_marginLeft="56dp"
             android:layout_marginStart="56dp"
             android:layout_marginTop="16dp"
             android:textColor="@color/very_Dark_crimson"
             android:textSize="12sp"
             app:fontFamily="@font/adam"
-            app:layout_constraintBottom_toTopOf="@+id/view8"
             app:layout_constraintStart_toEndOf="@+id/vul_string"
             app:layout_constraintTop_toBottomOf="@+id/cimm_m" />
 
@@ -1214,7 +1210,7 @@
             android:textSize="12sp"
             app:fontFamily="@font/adam"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/dimm_m" />
+            app:layout_constraintTop_toBottomOf="@+id/dimm_string" />
 
         <TextView
             android:id="@+id/cimm_m"
