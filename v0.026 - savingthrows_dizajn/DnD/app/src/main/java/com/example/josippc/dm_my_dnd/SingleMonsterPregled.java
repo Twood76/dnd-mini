@@ -36,10 +36,11 @@ public class SingleMonsterPregled extends AppCompatActivity implements Tab1.OnFr
         String[] args = { monsterId };
         c = myDbHelper.myDataBase.query("monsters", null ,"_id=?", args,  null, null, "Name");
 
+        // Još nemamo column za LEGENDARY pa je tu samo zakomentirano
         TabLayout tabLayout=(TabLayout)findViewById(R.id.tablayout);
         tabLayout.addTab(tabLayout.newTab().setText("Overview"));
-        tabLayout.addTab(tabLayout.newTab().setText("Traits"));
         tabLayout.addTab(tabLayout.newTab().setText("Actions"));
+        tabLayout.addTab(tabLayout.newTab().setText("Traits"));
         if (c.moveToFirst()) {
             do {
                 if(c.getString(62).length()>0) {
