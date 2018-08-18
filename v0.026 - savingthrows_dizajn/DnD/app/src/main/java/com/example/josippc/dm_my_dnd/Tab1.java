@@ -270,6 +270,7 @@ public class Tab1 extends Fragment {
 
 
 
+
                 //Alignment pretvara u puni naziv
                 final TextView align = view.findViewById(R.id.alignment_monstera);
                 switch(c.getString(4))
@@ -366,7 +367,7 @@ public class Tab1 extends Fragment {
                         senses_monstera.getVisibility()==View.GONE &&
                         lang_monstera.getVisibility()==View.GONE)
                 {
-                    final View SkillsView = (View) view.findViewById(R.id.view10);
+                    final View SkillsView = (View) view.findViewById(R.id.view8);
                     ConstraintLayout.LayoutParams lp1 = (ConstraintLayout.LayoutParams) SkillsView.getLayoutParams();
                     lp1.setMargins(8,0,8,0);
                     SkillsView.setVisibility(View.GONE);
@@ -414,6 +415,17 @@ public class Tab1 extends Fragment {
                 }
                 else{
                     vul_m.setText(c.getString(32));
+                }
+
+                if(res_m.getVisibility()==View.GONE &&
+                        dimm_m.getVisibility()==View.GONE &&
+                        cimm_m.getVisibility()==View.GONE &&
+                        vul_m.getVisibility()==View.GONE)
+                {
+                    final View SkillsView = (View) view.findViewById(R.id.view8);
+                    ConstraintLayout.LayoutParams lp = (ConstraintLayout.LayoutParams) SkillsView.getLayoutParams();
+                    lp.setMargins(8,0,8,0);
+                    SkillsView.setVisibility(View.GONE);
                 }
 
             } while (c.moveToNext());
